@@ -33,7 +33,7 @@
     }
 
     .hero {
-      background: url('https://images.unsplash.com/photo-1576186726118-4f5ec94e1e30') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1607093800858-0d72c34a64bc') no-repeat center center/cover;
       color: white;
       text-align: center;
       padding: 100px 20px;
@@ -41,7 +41,7 @@
 
     .content {
       padding: 40px 20px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
     }
 
@@ -49,7 +49,21 @@
       background-color: #fdf1ec;
       border-radius: 10px;
       padding: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .producto img {
+      width: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .producto div {
+      flex: 1;
     }
 
     footer {
@@ -58,6 +72,18 @@
       text-align: center;
       padding: 15px;
       margin-top: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .producto {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .producto img {
+        width: 100%;
+        max-width: 300px;
+      }
     }
   </style>
 </head>
@@ -80,17 +106,29 @@
 
   <div class="content" id="productos">
     <h2>Nuestras Mermeladas</h2>
+
     <div class="producto">
-      <h3>🍓 Fresa con Chía</h3>
-      <p>Mermelada rica en antioxidantes, combinando el dulzor de la fresa con el poder nutritivo de la chía. Ideal para desayunos saludables.</p>
+      <img src="https://images.unsplash.com/photo-1589308078055-ebd8a64b49cc" alt="Mermelada de Fresa con Chía">
+      <div>
+        <h3>🍓 Fresa con Chía</h3>
+        <p>Mermelada rica en antioxidantes, combinando el dulzor de la fresa con el poder nutritivo de la chía. Ideal para desayunos saludables.</p>
+      </div>
     </div>
+
     <div class="producto">
-      <h3>🥭 Mango con Maracuyá</h3>
-      <p>Una mezcla tropical, fresca y exótica. Perfecta para untar o acompañar postres.</p>
+      <img src="https://images.unsplash.com/photo-1615485290248-15d6f71dcfbf" alt="Mermelada de Mango con Maracuyá">
+      <div>
+        <h3>🥭 Mango con Maracuyá</h3>
+        <p>Una mezcla tropical, fresca y exótica. Perfecta para untar o acompañar postres.</p>
+      </div>
     </div>
+
     <div class="producto">
-      <h3>🍒 Camu Camu</h3>
-      <p>Altísima en vitamina C, esta mermelada ofrece un sabor único y un impulso natural para tu sistema inmunológico.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Camu_camu.jpg" alt="Mermelada de Camu Camu">
+      <div>
+        <h3>🍒 Camu Camu</h3>
+        <p>Altísima en vitamina C, esta mermelada ofrece un sabor único y un impulso natural para tu sistema inmunológico.</p>
+      </div>
     </div>
   </div>
 
@@ -101,7 +139,7 @@
 
   <div class="content" id="contacto">
     <h2>Contacto</h2>
-    <p>📞 Teléfono: +51 987 654 321</p>
+    <p>📞 Teléfono: +51 976 812 192</p>
     <p>📧 Correo: raicesdulces@gmail.com</p>
     <p>📍 Tingo María, Perú</p>
   </div>
